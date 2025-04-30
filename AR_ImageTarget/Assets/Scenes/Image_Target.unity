@@ -467,13 +467,13 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: Rocks
+  mTrackableName: EyeDrops
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/DemoDatabase.xml
-  mAspectRatio: 0.7
+  mAspectRatio: 1.718121
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 0.7
+  mHeight: 1.718121
   mRuntimeTexture: {fileID: 0}
 --- !u!21 &752397247
 Material:
@@ -482,7 +482,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'RocksMaterial
+  m_Name: 'EyeDropsMaterial
 
     -17894'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -501,7 +501,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 445c08e9e41f4d3aa5f0fd1c4a181b0d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 898309b7c3324e16b94e54b3df380f55, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 870871658}
   - component: {fileID: 870871657}
   - component: {fileID: 870871656}
+  - component: {fileID: 870871660}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -528,21 +529,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &870871655
-Transform:
+--- !u!224 &870871655
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870871654}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.99993, y: 1.70268, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750137446}
-  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -270, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!64 &870871656
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -585,7 +590,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4f6140577dc8f3d4b82a0579017ff7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -615,6 +620,14 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870871654}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!222 &870871660
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870871654}
+  m_CullTransparentMesh: 1
 --- !u!43 &1488417449
 Mesh:
   m_ObjectHideFlags: 0
@@ -633,7 +646,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.1, y: 0, z: 0.1}
+      m_Extent: {x: 0.5, y: 0, z: 0.35}
   m_Shapes:
     vertices: []
     shapes: []
@@ -712,7 +725,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 000000bf000000003333b3be000000000000803f000000000000000000000000000000bf000000003333b33e000000000000803f00000000000000000000803f0000003f000000003333b3be000000000000803f000000000000803f000000000000003f000000003333b33e000000000000803f000000000000803f0000803f
+    _typelessdata: 000000bf0000000064eb5bbf000000000000803f000000000000000000000000000000bf0000000064eb5b3f000000000000803f00000000000000000000803f0000003f0000000064eb5bbf000000000000803f000000000000803f000000000000003f0000000064eb5b3f000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
